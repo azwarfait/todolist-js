@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <script src="./script.js" defer></script>
+  </head>
+  <style>
+    .container {
+      width: 400px;
+      margin: auto;
+    }
+    div > div {
+      display: flex;
+      justify-content: space-between;
+    }
+    li {
+      display: grid;
+      grid-template-columns: 0.5fr 4fr 1fr 1fr;
+      padding: 2px 0;
+    }
+
+    ul button {
+      margin: 0 5px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #input {
+      width: 70vw;
+    }
+    #tambah {
+      width: 30vw;
+    }
+
+    .selesai {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h2>My To Do List</h2>
+      <div>
+        <input type="text" id="input" placeholder="Tugas baru..." />
+        <button id="tambah">Tambah</button>
+      </div>
+      <ul id="list"></ul>
+    </div>
+
+    <script>
+      
+    </script>
+  </body>
+</html>
