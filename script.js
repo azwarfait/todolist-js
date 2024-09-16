@@ -47,7 +47,7 @@ function hapusKeg(event) {
 
 function editKeg(event) {
   var edited = prompt("Edit Data Kegiatan");
-  if (/^\s*$/.test(edited)) {
+  if (/^\s*$/.test(edited) || edited == null) {
     alert("Data Kegiatan Tidak Boleh Kosong!");
     return;
   }
